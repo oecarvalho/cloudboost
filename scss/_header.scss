@@ -1,0 +1,35 @@
+header{
+    margin-top: 1rem;
+    position: sticky;
+    z-index: 2000;
+    top: 1rem;
+    .content-header{
+        @include flexCenterJustify;
+        border-radius: 6.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(3.5px);
+        padding: .5rem .5rem .5rem 1.3125rem;
+
+        .actions-right{
+            @include flex-center;
+            gap: 1rem;
+
+            .ajuda{
+                @include flex-center;
+                gap: .5rem;
+
+                a{
+                    color: $gray-200;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 150%; 
+                    transition: .3s ease;
+                    &:hover{
+                        color: $purple-10;
+                    }
+                }
+            }
+        }
+    }
+}
