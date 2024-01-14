@@ -38,6 +38,25 @@
             color: $gray-300;
         }
     }
+
+    @include responsivo('tablet'){
+        margin: 0 auto;
+        input{
+            text-align: left;
+        }
+    }
+
+    @include responsivo('mobile'){
+        justify-content: space-between;
+        input{
+            max-width: 9.375rem;
+        }
+
+        .btn-primary{
+            padding: .75rem 1.25rem;
+            font-size: 1rem;
+        }
+    }
 }
 
 .card-recurso{

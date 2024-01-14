@@ -24,4 +24,70 @@
     ul{
         @include flexCenterJustify
     }
+
+    @include responsivo('laptop'){
+        padding-top: 5rem;
+
+        .recursos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+
+            .card-recurso{
+                max-width: 100%;
+
+            }
+        }
+    }
+
+    @include responsivo('tablet'){
+        padding-bottom: 5rem;
+        .intro-recursos{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            h3{
+                text-align: center;
+            }
+        }
+
+        .recursos{
+            .card-recurso{
+                .icon{
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                }
+                .text{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include responsivo('mobile'){
+        padding-bottom: 5rem;
+        .intro-recursos{
+            gap: 1rem;
+
+            h3{
+                font-size: 1.75rem;
+            }
+        }
+
+        .recursos{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            .card-recurso{
+                .icon{
+                    margin: 0 auto;
+                    margin-bottom: 1rem;
+                }
+                .text{
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

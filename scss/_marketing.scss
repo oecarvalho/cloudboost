@@ -10,6 +10,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        border-radius: 10px;
 
         h2{
             text-align: center;
@@ -27,5 +28,30 @@
             width: 31.25rem;
             margin-bottom: 2rem;
         }
+    }
+
+    @include responsivo('tablet'){
+        .box{
+            padding: 0 1.25rem;
+        }
+    }
+
+    @include responsivo('mobile'){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+       .box{
+            padding: 3rem 0px;
+            height: auto;
+            background-size: cover;
+
+            h2{
+                font-size: 1.8rem;
+            }
+
+            p{
+                font-size: 1rem;
+                width: 20rem;
+            }
+       }
     }
 }

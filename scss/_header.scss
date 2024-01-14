@@ -31,5 +31,25 @@ header{
                 }
             }
         }
+
+        .hidden{
+            display: none;
+        }
+    }
+
+    @include responsivo('mobile'){
+        .content-header{
+            padding: 2rem 2.5rem;
+            .logo{
+                max-width: 8.4375rem;
+            }
+            .actions-right{
+                display: none;
+            }
+
+            .hidden{
+                display: block;
+            }
+        }
     }
 }
