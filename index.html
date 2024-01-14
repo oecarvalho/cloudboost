@@ -7,11 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/boost.svg" type="image/x-icon">
     <title>CloudBoost | CodeBoost</title>
 </head>
 <body>
-    <header>
+    <header data-aos="fade-up">
         <div class="container">
             <div class="content-header">
                 <a href="#" class="logo"><img src="/assets/logo-boost.svg" alt=""></a>
@@ -33,7 +34,7 @@
 
     <section class="s-hero container">
         <div class="hero-content">
-            <div class="content-info">
+            <div class="content-info" data-aos="fade-right">
                 <h1>Ferramenta de e-mail marketing perfeita para <span>sua empresa!</span></h1>
                 <p>Aproveite o potencial do e-mail marketing para ganhar vendas e fortalecer seu relacionamento com clientes.</p>
                 <form action="" class="form-email">
@@ -55,21 +56,21 @@
                 </div>
             </div>
 
-            <div class="content-img">
+            <div class="content-img" data-aos="fade-left">
                 <img src="/assets/banner.png" class="active" alt="">
-                <img src="/assets/banner-mb.png" class="hidden" alt="">
+                <img src="/assets/banner-mb.png" class="hidden" data-aos="fade-up" alt="">
             </div>
             
         </div>
     </section>
 
     <section class="s-recursos container">
-        <div class="intro-recursos">
+        <div class="intro-recursos" data-aos="fade-right">
             <h3>Conheça os recursos da ferramenta de e-mail marketing CloudBoost</h3>
             <p>Mais de 5.000 empresas que utilizam ✌️</p>
         </div>
 
-        <ul class="recursos">
+        <ul class="recursos" data-aos="fade-up">
             <div class="card-recurso">
                 <div class="icon">
                     <img src="/assets/persons.svg" alt="alcance mais">
@@ -117,11 +118,19 @@
     </section>
 
     <section class="s-marketing container">
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
             <h2>Alavanque com a Ferramenta de E-mail Marketing Perfeita!</h2>
             <p>Aumente as conversões, nutra relacionamentos e alcance o sucesso. Experimente agora mesmo!</p>
             <a href="#" class="btn-primary">Testar Gratis</a>
         </div>
     </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>
