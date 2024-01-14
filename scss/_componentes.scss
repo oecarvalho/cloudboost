@@ -25,6 +25,7 @@
     width: 100%;
     max-width: 32.5625rem;
     gap: 16px;
+    margin-bottom: 3rem;
 
     input{
         all: unset;
@@ -75,6 +76,8 @@
     width: 100%;
     max-width: 284px;
     gap: 8px;
+    
+
     .info-reviews{
         @include flexCenterJustify;
         gap: 4px;
